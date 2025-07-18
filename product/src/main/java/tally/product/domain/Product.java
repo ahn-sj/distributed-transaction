@@ -1,4 +1,4 @@
-package tally.monolitic.product.domain;
+package tally.product.domain;
 
 import jakarta.persistence.*;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,4 @@
-package tally.monolitic.order.domain;
+package tally.order.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
