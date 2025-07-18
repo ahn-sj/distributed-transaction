@@ -1,12 +1,6 @@
 package tally.monolitic.order.application.dto;
 
-import java.util.List;
-
 public record PlaceOrderCommand(
-        List<OrderIteam> orderIteams
+        Long orderId
 ) {
-    public record OrderIteam(
-            Long productId,
-            Long quantity
-    ) {}
 }

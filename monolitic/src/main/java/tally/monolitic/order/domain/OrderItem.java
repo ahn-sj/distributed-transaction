@@ -1,12 +1,14 @@
 package tally.monolitic.order.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+@Getter
 @Entity
 @Table(name = "order_items")
 @NoArgsConstructor
-public class OrderIteam {
+public class OrderItem {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -17,7 +19,7 @@ public class OrderIteam {
 
     private Long quantity;
 
-    public OrderIteam(final Long orderId, final Long productId, final Long quantity) {
+    public OrderItem(final Long orderId, final Long productId, final Long quantity) {
         this.orderId = orderId;
         this.productId = productId;
         this.quantity = quantity;
